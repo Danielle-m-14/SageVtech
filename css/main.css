@@ -86,6 +86,28 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  background-image: url("../img/hero-image.png");
+  background-size: 190%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-homepage {
+  height: 50px;
+  width: auto;
+}
+
+.bluerectangle {
+  max-height: 120px;
+  background-color: rgba(42, 42, 112, 0.671);
+  color: white;
+  padding-left: 15px;
+}
+
+.fas {
+  font-size: 30px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +282,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
