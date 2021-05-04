@@ -214,8 +214,8 @@ p {
   }
 
   .logo-homepage {
-    height: 5em;
-    width: 5em;
+    height: 6em;
+    width: 6em;
   }
 
   .mainrectangle {
@@ -231,6 +231,11 @@ p {
     text-align: center;
     font-size: 1.1em;
   }
+
+  .mainrectangle h1,
+  .mainrectangle p {
+    padding: 2%;
+  }
 } /*Don't delete*/
 
 @media only screen and (min-width: 1150px) {
@@ -243,22 +248,23 @@ p {
   }
 
   .logo-homepage {
-    height: 5em;
-    width: 5em;
+    height: 8em;
+    width: 8em;
   }
 
   .mainrectangle {
-    width: 42%;
-    margin: 10% 0 10% 0;
+    width: 43%;
+    margin: 8% 0 8% 0;
   }
 
   .mainrectangle h1 {
     font-size: 3.3em;
+    text-align: center;
   }
 
   .mainrectangle p {
     text-align: center;
-    font-size: 1.9em;
+    font-size: 1.7em;
   }
 } /*Don't delete*/
 
