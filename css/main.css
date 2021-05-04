@@ -13,8 +13,9 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*
@@ -43,10 +44,10 @@ html {
 
 hr {
   display: block;
-  height: 1px;
+  height: 0.0625em;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0.0625em 0;
   padding: 0;
 }
 
@@ -90,23 +91,29 @@ body {
   background-image: url("../img/hero-image.png");
   background-size: 190%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-position-x: 20%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 .logo-homepage {
-  height: 50px;
+  height: 5em;
   width: auto;
 }
 
-.bluerectangle {
-  max-height: 120px;
-  background-color: rgba(42, 42, 112, 0.671);
+.mainrectangle {
+  background-color: rgba(15, 7, 87, 0.76);
   color: white;
-  padding-left: 15px;
+  padding: 0.001em;
+  margin: 10% 0 10% 0;
 }
 
-.fas {
-  font-size: 30px;
+.mainrectangle h1,
+.mainrectangle p {
+  padding-left: 1em;
 }
 
 /* ==========================================================================
@@ -197,9 +204,63 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  body {
+    background-image: url("../img/hero-image.png");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .logo-homepage {
+    height: 5em;
+    width: 5em;
+  }
+
+  .mainrectangle {
+    width: 45%;
+    margin: 10% 0 10% 0;
+  }
+
+  .mainrectangle h1 {
+    font-size: 2.5em;
+  }
+
+  .mainrectangle p {
+    text-align: center;
+    font-size: 1.1em;
+  }
+} /*Don't delete*/
+
+@media only screen and (min-width: 1150px) {
+  /*Desktop styles here*/
+
+  body {
+    background-image: url("../img/hero-image.png");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .logo-homepage {
+    height: 5em;
+    width: 5em;
+  }
+
+  .mainrectangle {
+    width: 42%;
+    margin: 10% 0 10% 0;
+  }
+
+  .mainrectangle h1 {
+    font-size: 3.3em;
+  }
+
+  .mainrectangle p {
+    text-align: center;
+    font-size: 1.9em;
+  }
+} /*Don't delete*/
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
